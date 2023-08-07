@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLAyouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="BsD-Bm-nvr">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="MhK-bL-Oq8">
+                                <rect key="frame" x="71.666666666666686" y="109" width="250" height="138"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RM-OH-MhV">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Treasure map" backgroundImage="button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyH-a2-RgJ">
+                                        <rect key="frame" x="0.0" y="49" width="250" height="40"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Weather forecast" backgroundImage="button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="FeS-ef-c17" kind="presentation" modalPresentationStyle="fullScreen" id="q1z-8i-rUX"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="cgm-EG-2Uh">
+                                        <rect key="frame" x="0.0" y="98" width="250" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS7-K3-8bc">
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="40"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Privacy" backgroundImage="button">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDe-hU-ihf">
+                                                <rect key="frame" x="199" y="0.0" width="51" height="40"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="FAQ" backgroundImage="button">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="ldU-g7-Rr5"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BsD-Bm-nvr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2ch-1V-BxN"/>
+                            <constraint firstAttribute="bottom" secondItem="BsD-Bm-nvr" secondAttribute="bottom" id="3Mq-4I-fbo"/>
+                            <constraint firstItem="MhK-bL-Oq8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="5BX-gw-VJv"/>
+                            <constraint firstAttribute="trailing" secondItem="BsD-Bm-nvr" secondAttribute="trailing" id="eL3-fx-aLd"/>
+                            <constraint firstItem="BsD-Bm-nvr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fid-WG-NeP"/>
+                            <constraint firstItem="MhK-bL-Oq8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4r-Gr-KIk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2" y="4"/>
+        </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="rzG-Me-6l8">
+            <objects>
+                <viewController id="FeS-ef-c17" customClass="WeatherViewController" customModule="AutoLAyouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="snO-ri-HBc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="J0Q-bC-Gmr">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X84-2l-ZFc">
+                                <rect key="frame" x="71.666666666666686" y="50" width="250" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twb-XB-ijc">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Weather forecast" backgroundImage="button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="weather-sun" translatesAutoresizingMaskIntoConstraints="NO" id="FMU-eY-2Gy">
+                                        <rect key="frame" x="0.0" y="48" width="250" height="202"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="MPz-Jl-B0q"/>
+                                    <constraint firstAttribute="width" constant="250" id="cWM-Bk-QjD"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NK-2x-eCY">
+                                <rect key="frame" x="71.666666666666686" y="380" width="250" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jge-vd-xTn">
+                                        <rect key="frame" x="0.0" y="0.0" width="66" height="40"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Back" backgroundImage="button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backTapped:" destination="FeS-ef-c17" eventType="touchUpInside" id="GQ9-7c-TeI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOl-2a-XV9">
+                                        <rect key="frame" x="66" y="0.0" width="184" height="40"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Privacy" backgroundImage="button">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="xPJ-LM-fzy"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QBF-pe-27Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9NK-2x-eCY" firstAttribute="centerX" secondItem="snO-ri-HBc" secondAttribute="centerX" id="0tO-kC-Efj"/>
+                            <constraint firstAttribute="trailing" secondItem="J0Q-bC-Gmr" secondAttribute="trailing" id="2MV-hl-nfF"/>
+                            <constraint firstItem="9NK-2x-eCY" firstAttribute="top" secondItem="X84-2l-ZFc" secondAttribute="bottom" constant="80" id="DyQ-bu-eqo"/>
+                            <constraint firstItem="X84-2l-ZFc" firstAttribute="top" secondItem="QBF-pe-27Q" secondAttribute="top" constant="50" id="IlX-ri-GEP"/>
+                            <constraint firstAttribute="bottom" secondItem="J0Q-bC-Gmr" secondAttribute="bottom" id="O0y-oy-dSj"/>
+                            <constraint firstItem="X84-2l-ZFc" firstAttribute="centerX" secondItem="snO-ri-HBc" secondAttribute="centerX" id="Rcl-Dy-sSI"/>
+                            <constraint firstItem="J0Q-bC-Gmr" firstAttribute="leading" secondItem="snO-ri-HBc" secondAttribute="leading" id="Z04-2w-MPA"/>
+                            <constraint firstItem="J0Q-bC-Gmr" firstAttribute="top" secondItem="snO-ri-HBc" secondAttribute="top" id="xpS-k0-TVu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hks-6W-cqv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fyK-6K-Sxf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1366" height="1366"/>
+        <image name="button" width="51" height="40"/>
+        <image name="weather-sun" width="120" height="120"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
