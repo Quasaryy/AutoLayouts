@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,13 +24,16 @@
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="MhK-bL-Oq8">
                                 <rect key="frame" x="71.666666666666686" y="109" width="250" height="138"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RM-OH-MhV">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RM-OH-MhV">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Treasure map" backgroundImage="button">
                                             <color key="titleColor" systemColor="labelColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="FZD-th-hzQ" kind="presentation" modalPresentationStyle="fullScreen" id="vZa-Nm-D33"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyH-a2-RgJ">
                                         <rect key="frame" x="0.0" y="49" width="250" height="40"/>
@@ -164,10 +168,124 @@
             </objects>
             <point key="canvasLocation" x="770" y="4"/>
         </scene>
+        <!--Treasure View Controller-->
+        <scene sceneID="mzf-p9-znD">
+            <objects>
+                <viewController id="FZD-th-hzQ" customClass="TreasureViewController" customModule="AutoLAyouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZJ1-w4-f8y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="7Vj-GB-cbQ">
+                                <rect key="frame" x="16" y="0.0" width="361" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ghost" translatesAutoresizingMaskIntoConstraints="NO" id="q2g-nM-u8J">
+                                        <rect key="frame" x="0.0" y="79.333333333333314" width="174" height="120.66666666666669"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Klb-RB-qLP">
+                                        <rect key="frame" x="174" y="133" width="187" height="67"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Каспер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BV3-ui-soi">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="42"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Доброе приведение" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkC-Zl-cHX">
+                                                <rect key="frame" x="0.0" y="43" width="187" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9ei-aK-hgz"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="U97-74-Ouj">
+                                <rect key="frame" x="16" y="210" width="361" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ring" translatesAutoresizingMaskIntoConstraints="NO" id="LpS-yy-dvQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="120.33333333333333" height="200"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Treasure" translatesAutoresizingMaskIntoConstraints="NO" id="gHU-Ji-Tzg">
+                                        <rect key="frame" x="120.33333333333334" y="0.0" width="120.33333333333334" height="200"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Golden Swift" translatesAutoresizingMaskIntoConstraints="NO" id="lJH-jw-NRS">
+                                        <rect key="frame" x="240.66666666666671" y="0.0" width="120.33333333333334" height="200"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="HJE-2l-ke4"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="treasure map" translatesAutoresizingMaskIntoConstraints="NO" id="rdN-1g-cxK">
+                                <rect key="frame" x="16" y="410" width="361" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="AYJ-Ke-pPb"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hsc-wV-fDA">
+                                <rect key="frame" x="277" y="630" width="100" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zy4-8e-QXZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="32.666666666666664"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Back"/>
+                                        <connections>
+                                            <action selector="backTapped:" destination="FZD-th-hzQ" eventType="touchUpInside" id="15P-K1-Jex"/>
+                                            <action selector="backTapped:" destination="6ez-yw-iJI" eventType="touchUpInside" id="mMu-t2-M8X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sq4-GL-UXw">
+                                        <rect key="frame" x="0.0" y="47.666666666666629" width="100" height="32.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Also Back"/>
+                                        <connections>
+                                            <action selector="alsoBackTapped:" destination="6ez-yw-iJI" eventType="touchUpInside" id="Ads-MY-RRo"/>
+                                            <action selector="alsoBackTapped:" destination="FZD-th-hzQ" eventType="touchUpInside" id="upP-9L-xYP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Uru-5f-SMN"/>
+                                    <constraint firstAttribute="width" constant="100" id="ddI-m9-5Ks"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FOK-kV-Ef4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U97-74-Ouj" firstAttribute="top" secondItem="7Vj-GB-cbQ" secondAttribute="bottom" constant="10" id="4Yg-4z-IMP"/>
+                            <constraint firstItem="Hsc-wV-fDA" firstAttribute="top" secondItem="rdN-1g-cxK" secondAttribute="bottom" constant="20" id="FNe-Pu-e2n"/>
+                            <constraint firstItem="rdN-1g-cxK" firstAttribute="top" secondItem="U97-74-Ouj" secondAttribute="bottom" id="GIG-hi-uOk"/>
+                            <constraint firstItem="FOK-kV-Ef4" firstAttribute="trailing" secondItem="Hsc-wV-fDA" secondAttribute="trailing" constant="16" id="HAw-iC-t5z"/>
+                            <constraint firstItem="FOK-kV-Ef4" firstAttribute="trailing" secondItem="U97-74-Ouj" secondAttribute="trailing" constant="16" id="PZA-pS-jee"/>
+                            <constraint firstItem="7Vj-GB-cbQ" firstAttribute="leading" secondItem="FOK-kV-Ef4" secondAttribute="leading" constant="16" id="RQ4-ql-wCM"/>
+                            <constraint firstItem="U97-74-Ouj" firstAttribute="leading" secondItem="FOK-kV-Ef4" secondAttribute="leading" constant="16" id="X6V-fV-Ujm"/>
+                            <constraint firstItem="FOK-kV-Ef4" firstAttribute="trailing" secondItem="rdN-1g-cxK" secondAttribute="trailing" constant="16" id="YjD-E2-Tw9"/>
+                            <constraint firstItem="FOK-kV-Ef4" firstAttribute="trailing" secondItem="7Vj-GB-cbQ" secondAttribute="trailing" constant="16" id="eRz-ge-6QI"/>
+                            <constraint firstItem="rdN-1g-cxK" firstAttribute="leading" secondItem="FOK-kV-Ef4" secondAttribute="leading" constant="16" id="kmK-gu-dE8"/>
+                            <constraint firstItem="7Vj-GB-cbQ" firstAttribute="top" secondItem="ZJ1-w4-f8y" secondAttribute="top" id="wpy-d7-jFL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gyk-N5-xoO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="6ez-yw-iJI" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="0.76335877862595414" y="-732.3943661971831"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Golden Swift" width="80" height="80"/>
+        <image name="Ring" width="81" height="80"/>
+        <image name="Treasure" width="81" height="80"/>
         <image name="background" width="1366" height="1366"/>
         <image name="button" width="51" height="40"/>
+        <image name="ghost" width="120" height="120.66666412353516"/>
+        <image name="treasure map" width="300" height="130"/>
         <image name="weather-sun" width="120" height="120"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

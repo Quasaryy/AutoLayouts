@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D24CF3E22A84190C0045596C /* TreasureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24CF3E12A84190C0045596C /* TreasureViewController.swift */; };
 		D2F4D88A2A810C5500DFB668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4D8892A810C5500DFB668 /* AppDelegate.swift */; };
 		D2F4D88C2A810C5500DFB668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4D88B2A810C5500DFB668 /* SceneDelegate.swift */; };
 		D2F4D88E2A810C5500DFB668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F4D88D2A810C5500DFB668 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D24CF3E12A84190C0045596C /* TreasureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreasureViewController.swift; sourceTree = "<group>"; };
 		D2F4D8862A810C5500DFB668 /* AutoLAyouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLAyouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F4D8892A810C5500DFB668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F4D88B2A810C5500DFB668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				D2F4D88D2A810C5500DFB668 /* ViewController.swift */,
 				D2F4D89D2A81154A00DFB668 /* WeatherViewController.swift */,
+				D24CF3E12A84190C0045596C /* TreasureViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24CF3E22A84190C0045596C /* TreasureViewController.swift in Sources */,
 				D2F4D88E2A810C5500DFB668 /* ViewController.swift in Sources */,
 				D2F4D89E2A81154A00DFB668 /* WeatherViewController.swift in Sources */,
 				D2F4D88A2A810C5500DFB668 /* AppDelegate.swift in Sources */,
